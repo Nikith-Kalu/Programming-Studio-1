@@ -3,16 +3,15 @@ public class Triangle {
    private double height;
    
    public void setBase(double userBase){
-      // TODO: set base class field
+      base = userBase;
    }
-
    public void setHeight(double userHeight) {
-      // TODO: set base class field
+      height = userHeight;
    }
    
    public double getArea() {
-      // TODO: computer triangle area
-      return 0;
+      double area = 0.5 * base * height;
+      return area;
    }
    
    public void printInfo() {
