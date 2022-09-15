@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class WordFrequencies {
    public static void main(String[] args) {      
       // STEP 1: Read the number of words into an integer
-      
+
       // STEP 2: Read the words, one-at-a-time into an ArrayList
 
       // STEP 3: Find the number of times the *first* word appears in the ArrayList.
