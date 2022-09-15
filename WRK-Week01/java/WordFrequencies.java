@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class WordFrequencies {
    public static void main(String[] args) {      
@@ -13,9 +14,13 @@ public class WordFrequencies {
       for (int i = 0; i < num; i++) {
          list.add(scnr.next());
       }
-      // STEP 3: Find the number of times the *first* word appears in the ArrayList.
-      //         Print out this number in the required format.
-      
+      // STEP 3: Skip Steps 4 and 5 cause im not a beta male
+      while (list.size() != 0) {
+         String check = list.get(0);
+         int freq = Collections.frequency(list, check);
+         list.removeAll(Collections.singleton(check));
+         System.out.println(check + " - " + freq);
+      }
       // STEP 4: Question - What do you need to change in your Step 3 code
       //                    to find the number of times the *second* word
       //                    appears in the ArrayList?
@@ -25,4 +30,3 @@ public class WordFrequencies {
       // STEP 5: Turn your code in Step 3 into a loop that checks every word in the ArrayList
       }
    }
-}
