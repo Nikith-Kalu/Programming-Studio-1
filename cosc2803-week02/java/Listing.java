@@ -66,6 +66,12 @@ public class Listing {
    public void printInfo() {
       // TODO: Complete this to print out the information of the Listing
       System.out.println("Item: " + title);
-      System.out.println("\tPrice: " + price);
+      System.out.println("Brand: " + brand);
+      System.out.println("Description: " + description);
+      if(price != discPrice) { 
+         System.out.println("\tOld Price: " + origPrice); 
+         System.out.println("\tSpecial Price: " + discPrice);
+      }
+      else { System.out.println("\tPrice: " + price); }
    }
 }
