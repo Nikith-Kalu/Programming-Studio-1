@@ -8,6 +8,7 @@ public class Listing {
    private String description;
    private double origPrice;
    private double discPrice;
+   private double rating; 
 
    // Title
    public String getTitle() {
@@ -45,9 +46,18 @@ public class Listing {
       this.description = description;
    }
 
+   // Rating
+   public double getRating() {
+      return rating;
+   }
+
+   public void setRating(double rating) {
+      this.rating = rating;
+   }
+
    // Original Price
    public double getOrigPrice() {
-      return origPrice; 
+      return origPrice;
    }
 
    public void setOrigPrice(double origPrice) {
@@ -68,6 +78,7 @@ public class Listing {
       System.out.println("Item: " + title);
       System.out.println("Brand: " + brand);
       System.out.println("Description: " + description);
+      System.out.println("Rating: " + rating); 
       if(price != discPrice) { 
          System.out.println("\tOld Price: " + origPrice); 
          System.out.println("\tSpecial Price: " + discPrice);
